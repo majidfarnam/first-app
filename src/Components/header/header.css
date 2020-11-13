@@ -1,0 +1,14 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+    height: 110px;
+    width: 100%;
+    position: fixed;
+    margin-top: 0;
+    direction: rtl;
+    font-family: IRANSans;
+    z-index: 400;
+    box-shadow: 1px 1px 10px -0.9px #666 ;
+}

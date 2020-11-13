@@ -1,0 +1,7 @@
+.NavbarItems{
+    display: flex;
+    font-family: IRANSans;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}

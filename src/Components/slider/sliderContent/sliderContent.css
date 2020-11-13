@@ -1,0 +1,40 @@
+.sliderContent{
+    display: flexbox;
+    position: relative;
+    flex-direction: row;
+    /* width: 100vw; */
+    height: auto;
+    overflow: hidden;
+    z-index: 390;
+}
+.slideTitr{
+    /* text-align: left; */
+    position: absolute;
+    top:10%;
+    left: 7%;
+    color: black;
+    /* width: 50%; */
+    /* margin-left: -25%; */
+    text-align: left;
+}
+.slideTitr h1{
+    color: blueviolet;
+    font-family: sans-serif;
+    font-size: 3em;
+    font-weight: 700 ;
+}
+.slideTitr h2{
+    color: steelblue;
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: 500 ;
+    line-height: 0.5em;
+}
+.slideTitr button{
+    width: 50%;
+    margin-left: inherit;
+}
+.slideTitr button:hover{
+    width: 50%;
+
+}

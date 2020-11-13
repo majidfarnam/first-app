@@ -1,0 +1,32 @@
+.NavbarItem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: IRANSans;
+
+}
+
+.NavbarItem a{
+    padding: 10px;
+    color: #3145aa;
+    font-family: 'IRANSans';
+    font-size: 1.4em;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    border-bottom: .14em solid transparent;
+
+}
+
+.NavbarItem a:hover{
+    color: #747FB4;
+    border-bottom-color: #fbf2c8;
+    /* border-right-color: #fbf2c8; */
+    /* background-color: #fbf2c8; */
+}
+
+.NavbarItem a.active,
+.NavbarItem a.active {
+    border-bottom-color: #e7c93d;
+}

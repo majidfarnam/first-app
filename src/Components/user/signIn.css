@@ -1,0 +1,7 @@
+.Signin{
+    display: flex;
+    justify-content: center;
+}
+.Recaptcha {
+    text-align: center;
+}

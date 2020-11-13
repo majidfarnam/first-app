@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: IRANSans, Tahoma;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+
+}
+
+code {
+  font-family: 'IRANSans';
+}
