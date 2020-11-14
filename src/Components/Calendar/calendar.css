@@ -1,4 +1,14 @@
 .calendar{
-    width: 75%;
-    margin: auto;
+    width: 50%;
+    left: 0;
+    margin-right: auto;
+    
+}
+.toDoBox{
+    width: 50%;
+    /* margin-left: auto; */
+    background-color: #f2f2f2;
+    display: block;
+    /* align-items: center; */
+
 }
