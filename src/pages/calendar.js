@@ -14,14 +14,16 @@ const CalendarPage =(props)=>{
         <React.Fragment>
         <div style={{paddingTop: '150px'}}>
             <h2 >تقویم</h2>
-
-            <div className={"toDoBox"}>
-                <ToDo value={value}/>
+        </div>
+        
+        <div >
+               
                 {/* <button onClick={props.onClick} /> */}
             </div>
-        </div>
-        <div className={"calendar"}>
-            <Calendar 
+        <div className={'calendarContainer'} >
+            <ToDo className={"toDoBox"} value={value}/>
+            <Calendar
+                className={'calendar'}
                 onChange={onChange}
                 value={value}
                 />

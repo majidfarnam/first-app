@@ -1,14 +1,22 @@
-.calendar{
-    width: 50%;
-    left: 0;
-    margin-right: auto;
+.calendarContainer{
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
     
 }
 .toDoBox{
     width: 50%;
-    /* margin-left: auto; */
-    background-color: #f2f2f2;
-    display: block;
-    /* align-items: center; */
+    background-color: #d1d1d1;
+    margin-left: 2rem;
+    padding-right: 1rem;
+    
+}
+.calendar{
+    width: 50%;
+    background-color: #d1d1d1;
+    margin-left: 2rem;
 
+}
+.todolist{
+    font-size: 1.2em;
 }

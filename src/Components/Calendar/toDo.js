@@ -1,20 +1,30 @@
-import React, { Children } from 'react';
+import React, { useState } from 'react';
 // import Calandar from '../../pages/calendar';
 const ToDo =(props)=>{
-    // onClickDay =()=>{
+        const [taskHandler, setTaskHandler] =useState("");        
         var value = props.value.toString();
-        const taskHandler =()=>{
 
+        const task =(event)=>{
+
+            setTaskHandler(event);
+            console.log(taskHandler);
+        }
+        const addTask =(onClick)=>{
+            console.log(" it's ok! ");
         }
         if (props.value){
             return(
-                <React.Fragment className={"toDoBox"}>
+                <div className={"toDoBox"}>
                     <div>
-                     <label value={props.value}> لیست برنامه ها </label>
+                      <h1 > لیست برنامه ها </h1>
                     </div>
-                    <input onChange={taskHandler} placeholder={"برنامه خود را وارد کنید"}></input>
-
-                </React.Fragment>
+                    <div className="todolist">
+                      <li>زنگ زدن به دکتر</li>
+                      <li>تماس برای طراحی سایت</li>
+                      <p onClick={addTask}>+</p>
+                    </div>
+                      
+                </div>
                 
 
                 )
