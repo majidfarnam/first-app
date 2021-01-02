@@ -4,39 +4,42 @@ import ToDo from "../Components/Calendar/toDo";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import 'react-modern-calendar-datepicker/lib/DatePicker.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-modern-calendar-datepicker/lib/DatePicker.css';
+import { Calendar } from 'react-modern-calendar-datepicker';
 
-// import 'react-calendar/dist/Calendar.css';
+
 
 const CalendarPage =(props)=>{
-    const [value, setValue] = useState(new Date());
-    function onChange(nextValue) {
-        setValue(nextValue);
-      }
-      console.log();
+    // const [value, setValue] = useState(new Date());
+    const [selectedDay, setSelectedDay] = useState();
+    // function onChange(nextValue) {
+    //     setValue(nextValue);
+    //   }
+    let days = selectedDay;
+    console.log(days);
     return (
         <React.Fragment>
-        <div style={{paddingTop: '150px'}}>
-            <h2 >تقویم</h2>
-        </div>
-        
-        <div >
-               
-                {/* <button onClick={props.onClick} /> */}
+            <div className={'calendarContainer'} >
+                {/* <ToDo className={"toDoBox"} value={value}/> */}
+                {/* <Calendar
+                    className={'calendar'}
+                    onChange={onChange}
+                    value={value}
+                    /> */}
             </div>
-        <div className={'calendarContainer'} >
-            <ToDo className={"toDoBox"} value={value}/>
-            {/* <Calendar
-                className={'calendar'}
-                onChange={onChange}
-                value={value}
-                /> */}
-        </div>
-        <Container>
+        <Container style={{paddingTop: '150px'}}>
             <Row>
-                <Col>1 of 2</Col>
-                <Col>2 of 2</Col>
+                <Col>
+                    <Calendar
+                        locale="fa"
+                        value={selectedDay}
+                        onChange={setSelectedDay}
+                        shouldHighlightWeekends/>
+                </Col>
+                <Col>
+                    <ToDo />
+                </Col>
             </Row>
             <Row>
                 <Col>1 of 3</Col>
