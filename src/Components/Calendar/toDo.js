@@ -3,15 +3,32 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
 
 // import Calandar from '../../pages/calendar';
-const ToDo =(props)=>{
+const ToDo =()=>{
+    const [inputing, setInputing] = useState();
 
+    const addTask =()=>{
+        console.log(inputing);
+    }
+
+    const inputHandler =(event)=>{
+        let a = (event.target.value)
+        setInputing(a);
+        
+        // console.log(setInputing);
+
+    }
     return(
         <Container >
+            <h1>Hello</h1>
             <Row>
                 <Col>
-                    <h1>Hello</h1>
+                    <Button onClick={addTask}>Add task</Button>
+                </Col>
+                <Col>
+                    <input placeholder="Please enter your task..." onChange={inputHandler}></input>
                 </Col>
             </Row>
         </Container>
